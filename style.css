@@ -1,0 +1,83 @@
+head, body {
+    background-color: beige;
+}
+
+#welcometext {
+    border: 1.5px solid salmon;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: coral;
+    width: 50%;
+}
+
+.baz {
+    color: coral;
+    margin: auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+.para{
+    color: slategray;
+    font-size: 22px;
+    padding: 10px;
+}
+
+#end {
+    color: coral;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+li {
+    color: slategray;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+ul > li {
+    color: coral;
+}
+
+a[href="https://google.com"] {
+    color: slategray;
+}
+
+a {
+    color: coral;
+}
+
+button {
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: coral;
+    width: 250px;
+    height: 50px;
+    font-size: 22px;
+    margin-left: 20px;
+    padding: 10px;
+    transition: 0.2s linear;
+}
+
+button:hover {
+    background-color: bisque;
+    color: coral;
+}
+
+#specialpara {
+    color: slategray;
+    font-size: 22px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    #specialpara {
+        color: coral;
+    }
+}
