@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+        style="position: fixed; min-width: 100%; z-index: 2; opacity: 0.97;">
+        <a class="navbar-brand" type="button" onClick="document.getElementById('aboutme').scrollIntoView();"
+            style="padding-left: 15px ;">Abdulla Shahzan</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav" style="padding-top: 4px; padding-left: 7px;">
+                <a class="nav-item nav-link" type="button"
+                    onClick="document.getElementById('myprojects').scrollIntoView();">Projects</a>
+                <a class="nav-item nav-link" type="button"
+                    onClick="document.getElementById('myachievements').scrollIntoView();">Achievements</a>
+                <a class="nav-item nav-link" href="">Contact</a>
+            </div>
+        </div>
+        <a id="topbutton" class="btn btn-dark" style="align-items: right; margin-right: 15px;" type="button"
+            onClick="document.getElementById('top').scrollIntoView();" data-toggle="tooltip" title="Go back on top"><svg
+                xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+            </svg></a>
+    </nav>
+
+    <div id="top" class="bg-image d-flex justify-content-center align-items-center"
+        style="background-image: url(https://wallpaperaccess.com/full/84248.png) ; height: 100vh; background-size: cover; background-attachment: fixed;">
+        <div class="d-flex align-items-center h-100" style="cursor: default;">
+            <div id="fadeintext" style="text-align: center;">
+                <h1 class="text-white mb-0 display-1">Welcome!</h1>
+                <button class="btn btn-light text-uppercase" style="letter-spacing: 3px; color: #292b2c; bottom: 0px;"
+                    onClick="document.getElementById('aboutme').scrollIntoView();">Start Exploring</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="aboutme" style="background-color: #f7f7f7 ;">
+        <div class="container reveal" style="align-items: left;">
+            <h1 class="display-2">About the author</h1>
+            <p class="lead">Hi my name is Abdulla Shahzan and i have a lot of experience in computer science.</p>
+            <a href="" id="learnmore">Learn more</a>
+            <hr class="my-4">
+        </div>
+        <div class="container reveal" style="align-items: right;">
+            <img src="https://wallpaperaccess.com/full/5290493.jpg" style="max-width: 100%;">
+        </div>
+    </section>
+
+    <div
+        style="background-image: url(https://wallpaperaccess.com/full/84248.png); height: 25vh; background-size: cover; background-attachment: fixed;">
+    </div>
+
+    <section id="myprojects" style="background-color: #f7f7f7 ;">
+        <div class="container reveal" style="min-width: 100%;">
+            <h1 class="display-4" style="text-align: center; padding-bottom: 50px;">Projects</h1>
+
+            <div class="container-fluid text-center" style="width: 100%;">
+                <div class="row">
+                    <div class="col-md-1" style="margin-top: auto; margin-bottom: auto;"><button class="btn"
+                            id="slideBack" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                                fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z" />
+                            </svg></button></div>
+                    <div class="col-md-10">
+                        <div class="scoll-pane" id="container">
+                            <ul class="projects">
+                                <li>
+                                    <div class="card card-block mx-2" style="min-width: 200px;">
+                                        <div class="card" style="width: 18rem; height: 24rem;">
+                                            <img class="card-img-top"
+                                                src="https://images.unsplash.com/photo-1583339522870-0d9f28cef33f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-block mx-2" style="min-width: 200px;">
+                                        <div class="card" style="width: 18rem; height: 24rem;">
+                                            <img class="card-img-top"
+                                                src="https://images.unsplash.com/photo-1583339522870-0d9f28cef33f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-block mx-2" style="min-width: 200px;">
+                                        <div class="card" style="width: 18rem; height: 24rem;">
+                                            <img class="card-img-top"
+                                                src="https://images.unsplash.com/photo-1583339522870-0d9f28cef33f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-block mx-2" style="min-width: 200px;">
+                                        <div class="card" style="width: 18rem; height: 24rem;">
+                                            <img class="card-img-top"
+                                                src="https://images.unsplash.com/photo-1583339522870-0d9f28cef33f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card card-block mx-2" style="min-width: 200px;">
+                                        <div class="card" style="width: 18rem; height: 24rem;">
+                                            <img class="card-img-top"
+                                                src="https://images.unsplash.com/photo-1583339522870-0d9f28cef33f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                <li>
+                                    <div class="card card-block mx-2">
+                                        <div class="card" style="width: 10rem; height: 24rem;">
+                                            <div class="card-body" style="margin-top: 85%; ">
+                                                <h5 class="card-title">More...</h5>
+                                                <a href="#" class="btn btn-primary">All Projects</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-1" style="margin-top: auto; margin-bottom: auto;"><button class="btn" id="slide"
+                            type="button"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                                fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                            </svg></button></div>
+
+                </div>
+                <hr class="my-4">
+            </div>
+        </div>
+    </section>
+
+    <div
+        style="background-image: url(https://wallpaperaccess.com/full/84248.png); height: 25vh; background-size: cover; background-attachment: fixed;">
+    </div>
+
+    <section id="myachievements" style="background-color: #f7f7f7 ;">
+        <div class="containter reveal" style="min-width: 100%; text-align: center;">
+            <h1 class="display-4" style="text-align: center; padding-bottom: 40px; padding-top: 60px;">Achievements</h1>
+            <div class="row" style="text-align: center; margin: 20px;">
+                <div class="col-md-6 col-sm-12 mt-4">
+                    <div class="jumbotron" style="border: 0.5px solid slategray; padding:10px; border-radius:15px;">
+                        <h1 class="display-4">Hello, world!</h1>
+                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                            attention to featured content or information.</p>
+                        <hr class="my-4">
+                        <p>It uses utility classes for typography and spacing to space content out within the larger
+                            container.
+                        </p>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 mt-4">
+                    <div class="jumbotron" style="border: 0.5px solid slategray; padding:10px; border-radius:15px;">
+                        <h1 class="display-4">Hello, world!</h1>
+                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                            attention to featured content or information.</p>
+                        <hr class="my-4">
+                        <p>It uses utility classes for typography and spacing to space content out within the larger
+                            container.
+                        </p>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 mt-4">
+                    <div class="jumbotron" style="border: 0.5px solid slategray; padding:10px; border-radius:15px;">
+                        <h1 class="display-4">Hello, world!</h1>
+                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                            attention to featured content or information.</p>
+                        <hr class="my-4">
+                        <p>It uses utility classes for typography and spacing to space content out within the larger
+                            container.
+                        </p>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 mt-4">
+                    <div class="jumbotron" style="border: 0.5px solid slategray; padding:10px; border-radius:15px;">
+                        <h1 class="display-4">Hello, world!</h1>
+                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                            attention to featured content or information.</p>
+                        <hr class="my-4">
+                        <p>It uses utility classes for typography and spacing to space content out within the larger
+                            container.
+                        </p>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+                <hr class="my-4">
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="page-footer font-small pt-4" style="background-color: #292b2c; color: #f7f7f7;">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-7 mt-md-0 mt-2">
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>Here you can use rows and columns to organize your footer content.</p>
+                </div>
+
+                <div class="col-md-5 mb-md-0 mb-2">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="" class="foo">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="" class="foo">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="" class="foo">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="" class="foo">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="" style="color: #f7f7f7;"> Mywebsite.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
