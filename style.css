@@ -1,0 +1,373 @@
+.bg-image {
+    background-image: url("stockimage1.jpg");
+    background-color: #cccccc;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#welcometo {
+    animation: left_to_right 2s ease;
+}
+
+#learnmore {
+    color: #df072e;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.2s all linear;
+}
+
+#learnmore:hover {
+    border-bottom: 1px solid #df072e;
+    padding: 0 0 4px;
+}
+
+#introme {
+    color: #ffffff;
+    font-family: 'GT America Standard Regular';
+    animation-name: grad;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 10px;
+}
+
+#intromee {
+    color: #ffffff;
+    font-family: 'GT America Standard Regular';
+    animation-name: grad;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes grad {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+#getstarted {
+    color: #ffffff;
+    border-bottom: 1px solid #df072e;
+    text-decoration: none;
+    font-family: 'GT America Standard Regular';
+    cursor: pointer;
+    transition: 0.2s all linear;
+    animation: left_to_right 2.7s ease;
+}
+
+@keyframes left_to_right {
+    from {
+        margin-left: -100%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+#getstarted:hover {
+    border-bottom: none;
+    color: #df072e;
+}
+
+#threedashes {
+    position: relative;
+    right: 10px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: 0.2s all linear;
+}
+
+#threedashes:hover {
+    color: #df072e;
+}
+
+#ctitle {
+    font-family: "GT America Standard Regular";
+    font-size: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 30px;
+    transition: 0.2s all ease-in-out;
+}
+
+#ctitle:hover {
+    font-size: 45px;
+}
+
+#btitle {
+    font-family: "GT America Standard Regular";
+    font-size: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    transition: 0.2s all linear;
+    background: none;
+    border: 1px solid #ffffff;
+}
+
+#btitle:hover {
+    background-color: #ffffff;
+    color: #df072e;
+}
+
+.proj {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-family: 'GT America Standard Regular';
+    margin-top: 50px;
+    margin-bottom: 120px;
+    animation: floater 4s ease-in-out infinite;
+}
+
+@keyframes floater {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(0px, 10px);
+    }
+
+    100% {
+        transform: translate(0px, -0px);
+    }
+}
+
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    font-family: 'GT America Standard Regular';
+    position: relative;
+    padding-left: 20px;
+    top: 25%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.overlay button {
+    width: fit-content;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 72px;
+    color: #818181;
+    display: block;
+    position: relative;
+    transition: 0.3s;
+    background: none;
+    border: none;
+}
+
+.overlay button:hover,
+.overlay button:focus {
+    color: #f1f1f1;
+    border-bottom: 0.5px solid #df072e;
+    padding: 0 0 4px;
+}
+
+.overlay a {
+    width: fit-content;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 72px;
+    color: #818181;
+    display: block;
+    position: relative;
+    transition: 0.3s;
+    background: none;
+    border: none;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+    border-bottom: 0.5px solid #df072e;
+    padding: 0 0 4px;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+#myname {
+    width: fit-content;
+    font-size: 24px;
+    font-family: 'Helvetica';
+    margin-left: 15px;
+    color: #ffffff;
+    transition: 0.2s linear;
+}
+
+#myname:hover {
+    color: #df072e;
+}
+
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .container {
+    margin: 100px;
+}
+
+@media screen and (max-width: 480px) {
+    section h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    section .text-container {
+        flex-direction: column;
+    }
+}
+
+.scoll-pane {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    outline: none;
+    overflow-y: hidden;
+    padding-bottom: 15px;
+    -ms-overflow-style: scroll;
+    scrollbar-width: none;
+}
+
+.projects {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.scoll-pane::-webkit-scrollbar {
+    display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(223, 7, 46, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(223, 7, 46, 1);
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#achiv {
+    text-align: center;
+    font-size: 72px;
+    font-family: 'GT America Standard Regular';
+    color: #ffffff;
+    width: 100%;
+    margin-top: 140px;
+    animation: floater 4s ease-in-out infinite;
+}
+
+#cert {
+    color: #ffffff; 
+    font-family: 'GT America Standard Regular'; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#smbtn {
+    background: none; 
+    background-image: linear-gradient("#df072e", "#000000");
+    border-color: #ffffff; 
+    color: #ffffff;
+    transition: 0.2s all ease-in-out;
+    font-family: 'GT America Standard Regular'; 
+    width: 25%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#smbtn:hover {
+    background-color: #ffffff;
+    color: #df072e;
+    font-weight: bold;
+}
+
+#myemail {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.2s all linear;
+}
+
+#myemail:hover {
+    color: #df072e;
+}
+
+#thisthething {
+    font-family: 'GT America Standard Regular' ;
+}
