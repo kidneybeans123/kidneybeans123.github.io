@@ -1,0 +1,304 @@
+body {
+    font-family: helvetica;
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    min-height: 10rem;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
+    position: fixed;
+    z-index: 1000;
+}
+
+nav div.logo {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    animation: drop-in 2s;
+}
+
+nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    animation: drop-in 2s;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 26px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.2s linear all;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: whitesmoke;
+    color: rgb(121, 121, 121);
+}
+
+.bgimg {
+    background: url("homepage3.jpg") fixed;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay1 {
+    width: 70%;
+    height: 100vh;
+    background: rgba(245, 245, 245, 0.6);
+    clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%);
+    animation: float-in 3s;
+}
+
+.overlay2 {
+    width: 100%;
+    height: 100vh;
+    background: rgba(245, 245, 245, 0.6);
+    clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%);
+    animation: float-in 3s;
+}
+
+.quote {
+    position: absolute;
+    bottom: 2vw;
+    left: 2%;
+    font-size: 6vw;
+    width: 60%;
+    font-weight: bold;
+    padding: 0 0 3rem 0;
+    color: rgb(22, 34, 44);
+    animation: float-in 3.5s;
+}
+
+.quote2 {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    font-size: 12vw;
+    width: 60%;
+    font-weight: bold;
+    padding: 0 0 2rem 0;
+    color: rgb(22, 34, 44);
+    animation: float-in 3.5s;
+}
+
+@keyframes float-in {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translatex(0%);
+    }
+}
+
+@keyframes drop-in {
+    0% {
+        position: absolute;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        position: absolute;
+        transform: translateY(0%);
+    }
+}
+
+.topclients {
+    width: 100%;
+    height: auto;
+}
+
+.heading {
+    font-size: 5vw;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: rgb(22, 34, 44);
+    margin: 5vw;
+}
+
+.clients {
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+    animation: floating 3s infinite ease-in-out;
+}
+
+.thebox {
+    margin-bottom: 10vw;
+}
+
+.revealy {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revealy.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.projects {
+    width: 100%;
+    height: auto;
+    background: url('projects.jpg') fixed;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.projects .overlay {
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: auto;
+    background: rgba(53, 53, 53, 0.6);
+}
+
+.projects .overlay .heading {
+    color: whitesmoke;
+    font-size: 5vw;
+    text-align: center;
+    padding-top: 4vw;
+    letter-spacing: 10px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 85%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -22px 1vw auto 1vw;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 4vw;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 1vw;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 1vw 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #ffffff;
+}
+
+.endd {
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end {
+    font-size: 3vw;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+}
