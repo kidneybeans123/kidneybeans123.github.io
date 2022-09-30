@@ -16,8 +16,10 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-let slideIndex = 1;
+let slideIndex = 4;
 showSlides(slideIndex);
+
+
 
 // Next/previous controls
 function plusSlides(n) {
