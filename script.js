@@ -19,8 +19,6 @@ window.addEventListener("scroll", reveal);
 let slideIndex = 1;
 showSlides(slideIndex);
 
-
-
 // Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -47,4 +45,10 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-
+window.onscroll = function() {
+    if (window.pageYOffset > 500) {
+        document.querySelector('.nav').style.display = 'none'
+    } else {
+        document.querySelector('.nav').style.display = 'block'
+    }
+}

@@ -13,12 +13,12 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="nav">
         <div class="logo">Nexxus Architects</div>
         <ul class="d-none d-lg-block">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="" onclick="document.querySelector('.home').scrollIntoView();" class="active">Home</a></li>
+            <li><a href="" onclick="document.querySelector('.projects').scrollIntoView();">Projects</a></li>
+            <li><a href="" onclick="document.querySelector('.about').scrollIntoView();">About</a></li>
         </ul>
     </nav>
     <div class="bgimg">
@@ -29,20 +29,20 @@
     </div>
     <div class="topclients">
         <div class="heading d-flex justify-content-center revealy">our top clients</div>
-        <div class="container-fluid row revealy thebox">
-            <div class="col-md-3 d-flex justify-content-center">
+        <div class="container-fluid row thebox">
+            <div class="col-md d-flex justify-content-center revealy">
                 <img class="clients"
                     src="https://th.bing.com/th/id/R.782e88bad3bbad76695b2b15609e6e3b?rik=WARFxMmQpu198w&riu=http%3a%2f%2fwww.ranklogos.com%2fwp-content%2fuploads%2f2015%2f06%2fIndian-Oil-Corporation-Limited-Logo.png&ehk=VSMlmhG33mrO5JaFlgIOdHLKkS0r70NLQrMnKLrauMM%3d&risl=&pid=ImgRaw&r=0">
             </div>
-            <div class="col-md-3 d-flex justify-content-center">
+            <div class="col-md d-flex justify-content-center revealy">
                 <img class="clients"
                     src="https://th.bing.com/th/id/R.0c25fddd2ea4cce3978e80b75672070e?rik=nsx%2biFsndGrJzw&riu=http%3a%2f%2flktengineering.com%2fimages%2fcpwd-logo.png&ehk=nS9x%2f%2fiG77jNt9rv2GscR%2f%2bIV07ScDm%2fOQxAUk9JWOc%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1">
             </div>
-            <div class="col-md-3 d-flex justify-content-center">
+            <div class="col-md d-flex justify-content-center revealy">
                 <img class="clients"
                     src="https://th.bing.com/th/id/R.106ab93d7338edc3a36178d683a7e0d8?rik=WWCAK2YURw3WWg&riu=http%3a%2f%2fapcoinfra.com%2fwp-content%2fuploads%2f2018%2f08%2firrigation-department.png&ehk=5v26%2bcNonG0v7WVCgBgDBvOyLOxYt6UgQ41OZeSeDrw%3d&risl=&pid=ImgRaw&r=0">
             </div>
-            <div class="col-md-3 d-flex justify-content-center">
+            <div class="col-md d-flex justify-content-center revealy">
                 <img class="clients"
                     src="https://iconape.com/wp-content/png_logo_vector/uttar-pradesh-government-logo.png">
             </div>
@@ -84,6 +84,36 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
+        </div>
+    </div>
+    <div class="about" >
+        <div class="container-fluid row">
+            <div class="col-12 d-flex justify-content-center prj h3 revealy" style="letter-spacing: 5px; margin-top: 20px;">ABOUT US</div>
+        </div>
+        <div class="container-fluid row revealy" style="margin: 50px 0 30px 0;">
+            <div class="col-md-6 d-flex justify-content-center">
+                <img style="width:100%; height:auto; max-width: 600px; filter: grayscale(100%); -webkit-filter: grayscale(100%);" 
+                    src="handshake.jpg"
+                    alt="image cap">
+            </div>
+            <div class="col-md-6" style="text-align: left; font-size:1.2rem; margin-top: 60px; font-weight: lighter;">
+                Founded in 2018, the firm has primarily been involved in providing architectural services for residential,
+                mixed use land, hospital and landscape projects, along with the government project facilities trhoughout the country.
+                <br>
+                <div class="h4" style="border-bottom: none; letter-spacing: 3px; margin: 30px 0 20px 10px;">OUR SERVICES INCLUDE</div>
+                <ul class="lead" style="list-style:circle; padding-left: 30px;">
+                    <li>Entitlement</li>
+                    <li>Architectural Design</li>
+                    <li>Architectural Illustration</li>
+                    <li>Construction Document Production</li>
+                    <li>Construction Administration</li>
+                    <li>Interior Design</li>
+                    <li>Landscape Design</li>
+                    <li>Permitting</li>
+                    <li>Surveying</li>
+                </ul>
+                <br>
+            </div>
         </div>
     </div>
 

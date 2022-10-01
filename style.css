@@ -3,7 +3,7 @@ body {
     scroll-behavior: smooth;
 }
 
-nav {
+.nav {
     width: 100%;
     height: auto;
     min-height: 10rem;
@@ -12,7 +12,7 @@ nav {
     z-index: 1000;
 }
 
-nav div.logo {
+.nav div.logo {
     color: whitesmoke;
     font-size: 2.5rem;
     letter-spacing: 0.3rem;
@@ -21,14 +21,14 @@ nav div.logo {
     animation: drop-in 2s;
 }
 
-nav ul {
+.nav ul {
     position: absolute;
     right: 0;
     top: 0;
     animation: drop-in 2s;
 }
 
-nav ul li {
+.nav ul li {
     display: inline-block;
     font-size: 1rem;
     text-transform: uppercase;
@@ -36,7 +36,7 @@ nav ul li {
     margin: 26px 10px;
 }
 
-nav ul li a {
+.nav ul li a {
     text-decoration: none;
     color: whitesmoke;
     transition: 0.2s linear all;
@@ -44,16 +44,16 @@ nav ul li a {
     padding: 0.5rem 1rem;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+.nav ul li a:hover,
+.nav ul li a.active {
     background-color: whitesmoke;
     color: rgb(121, 121, 121);
 }
 
 .bgimg {
-    background: url("homepage3.jpg") fixed;
+    background: url("homepage1.jpg") fixed;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -83,7 +83,7 @@ nav ul li a.active {
     width: 60%;
     font-weight: bold;
     padding: 0 0 3rem 0;
-    color: rgb(22, 34, 44);
+    color: rgb(13, 18, 22);
     animation: float-in 3.5s;
 }
 
@@ -95,16 +95,18 @@ nav ul li a.active {
     width: 60%;
     font-weight: bold;
     padding: 0 0 2rem 0;
-    color: rgb(22, 34, 44);
+    color: rgb(9, 12, 15);
     animation: float-in 3.5s;
 }
 
 @keyframes float-in {
     0% {
+        opacity: 0;
         transform: translateX(-100%);
     }
 
     100% {
+        opacity: 1;
         transform: translatex(0%);
     }
 }
@@ -118,6 +120,18 @@ nav ul li a.active {
     100% {
         position: absolute;
         transform: translateY(0%);
+    }
+}
+
+@keyframes drop-out {
+    0% {
+        position: absolute;
+        transform: translateY(0%);
+    }
+
+    100% {
+        position: absolute;
+        transform: translateY(-100%);
     }
 }
 
@@ -139,7 +153,6 @@ nav ul li a.active {
     width: 50%;
     padding: 10px;
     margin-top: 10px;
-    animation: floating 3s infinite ease-in-out;
 }
 
 .thebox {
@@ -277,3 +290,5 @@ nav ul li a.active {
 .dot:hover {
     background-color: #ffffff;
 }
+
+
